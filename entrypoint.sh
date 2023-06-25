@@ -5,6 +5,7 @@ case "${GITHUB_EVENT_NAME}" in
         git push -f --all target
         git push -f --tags target
         ;;
+    
     delete)
         git push -d target ${GITHUB_EVENT_REF}
         ;;
